@@ -11,6 +11,8 @@
 | gitleaks | Secret scanning | Standard scanner; runs locally and in CI. |
 | GitHub Actions + Dependabot | CI wrapper and updates | Runs the same local gates on Linux and Windows. |
 
+Runtime dependencies: none. The library uses only Node built-in modules in `src/node.ts` and `src/cli.ts`.
+
 ## Discarded
 
 | Tool | Why not |
@@ -19,5 +21,6 @@
 | Jest | Needs extra transforms for ESM and TypeScript; slower. |
 | Shell scripts for gates | Not portable to Windows; the gate runner is a Node script. |
 | Bundlers (tsup, Rollup) | Unneeded for a small ESM library; `tsc` emits what is published. |
+| Mermaid itself at runtime | Needs a browser-like environment; the optional renderer is an external command instead. |
 
 Add a row whenever a dependency or tool is added or rejected.

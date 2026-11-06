@@ -9,4 +9,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Add Mermaid diagram extraction, structural linting (MMD001-MMD008), GitHub/text formatting, a fake and a command renderer, and a `run` CLI helper.
 - Initial project structure from the factory utility template.
