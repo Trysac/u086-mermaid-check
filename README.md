@@ -1,7 +1,6 @@
 # mermaid-check
 
-[![npm version](https://img.shields.io/npm/v/@trysac/mermaid-check.svg)](https://www.npmjs.com/package/@trysac/mermaid-check)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/mermaid-check.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u086-mermaid-check/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u086-mermaid-check/actions/workflows/ci.yml)
 
 A browser-free linter that finds Mermaid diagrams in Markdown and reports common structural mistakes with line numbers. An optional external renderer can be plugged in for a stricter check.
@@ -14,9 +13,15 @@ Mermaid diagrams in documentation break silently: a typo, or a node named `end`,
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/mermaid-check
+git clone https://github.com/Trysac/u086-mermaid-check.git
+cd u086-mermaid-check && npm ci && npm run build
+cd ../your-project && npm install ../u086-mermaid-check
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/mermaid-check"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations.
 
